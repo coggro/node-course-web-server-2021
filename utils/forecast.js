@@ -1,5 +1,6 @@
 import request from 'request'
-import { weatherstackKey } from '../keys.js'
+
+const weatherstackKey = process.env.WEATHERKEY
 
 const forecast = (latitude, longitude, callback) => {
   const url = `http://api.weatherstack.com/current?access_key=${weatherstackKey}&query=${latitude},${longitude}&units=f`

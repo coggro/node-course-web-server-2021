@@ -1,5 +1,6 @@
 import request from 'request'
-import { mapboxKey } from '../keys.js'
+
+const mapboxKey = process.env.GEOKEY
 
 const geocode = (address, callback) => {
   const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
