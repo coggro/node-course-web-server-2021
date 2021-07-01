@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node --experimental-json-modules --no-warnings src/app.js",
-    "start-mon": "nodemon src/app.js --experimental-json-modules --no-warnings -e js,hbs"
+    "dev": "nodemon src/app.js --experimental-json-modules --no-warnings -e js,hbs"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +19,8 @@
     "hbs": "^4.1.2",
     "request": "^2.88.2"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
 }
