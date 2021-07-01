@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node --experimental-json-modules --no-warnings src/app.js",
-    "start-mon": "nodemon src/app.js --experimental-json-modules --no-warnings -e js,hbs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-mon": "nodemon src/app.js --experimental-json-modules --no-warnings -e js,hbs"
   },
   "keywords": [],
   "author": "",

@@ -17,6 +17,7 @@ const __filename = fileURLToPath(import.meta.url),
 
 // call express to create server
 const app = express()
+const port = process.env.PORT || 3000
 
 // setup hbs engine and views location
 app.set(`view engine`, `hbs`)
@@ -105,6 +106,6 @@ app.get(`*`, (req, res) => {
 })
 
 // Set the server to listen on a prescribed port
-app.listen(`3000`, () => {
-  console.log(`Server is up on localhost:3000`)
+app.listen(port, () => {
+  console.log(`Server is up on localhost:${port}`)
 })
