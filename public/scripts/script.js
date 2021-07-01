@@ -1,5 +1,3 @@
-console.log(`script.js begin`)
-
 const weatherForm = document.querySelector(`form`),
   search = document.querySelector(`input`),
   messageOne = document.getElementById(`messageOne`),
@@ -29,5 +27,3 @@ weatherForm.addEventListener(`submit`, (e) => {
     })
   }
 })
-
-console.log(`script.js end`)
