@@ -1,4 +1,7 @@
+import dotenv from 'dotenv'
 import request from 'request'
+
+dotenv.config()
 
 const weatherstackKey = process.env.WEATHERKEY
 
